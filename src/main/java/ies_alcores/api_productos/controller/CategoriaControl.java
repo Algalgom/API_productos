@@ -20,6 +20,7 @@ public class CategoriaControl {
 
     @GetMapping
     public ResponseEntity<List<Categoria>> listar(){
+
         return ResponseEntity.ok(this.categoriaService.findAll());
     }
 }
