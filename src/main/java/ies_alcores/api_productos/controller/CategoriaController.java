@@ -31,4 +31,9 @@ public class CategoriaController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
+    @GetMapping("query1")
+    public ResponseEntity<List<Categoria>> query1(){
+        return ResponseEntity.ok(this.categoriaService.findIdBetween1and5());
+    }
 }

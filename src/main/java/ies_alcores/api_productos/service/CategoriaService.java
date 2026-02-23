@@ -21,4 +21,8 @@ public class CategoriaService {
     public Optional<Categoria> findById(final Long id){
         return this.categoriaRepository.findById(id);
     }
+
+    public List<Categoria> findIdBetween1and5(){
+        return this.categoriaRepository.findIdBetween1and5();
+    }
 }
